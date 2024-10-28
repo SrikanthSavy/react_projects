@@ -21,7 +21,9 @@ const MovieList = ({ type, title, emoji }) => {
     fetch(apiUrl).then((res) => res.json().then((data) => console.log(data)));
     }, []);
     */
-  const apiUrl = `https://api.themoviedb.org/3/movie/${type}?api_key=eb4bcecd0c46dd6b552db0d7d12cadb8`;
+  const apiUrl = `https://api.themoviedb.org/3/movie/${type}?api_key=${
+    import.meta.env.VITE_TMDB_API_KEY
+  }`;
 
   useEffect(() => {
     fetchMovies();
