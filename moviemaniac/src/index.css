@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "ShodaMontserrat";
+  src: url("./assets/fonts/Montserrat.woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #101010;
+  color: #fff;
+  font-family: "ShodaMontserrat";
+}
+
+.align_center {
+  display: flex;
+  align-items: center;
+}
+
+/*For making Html scroll smooth , to move on respec IDs */
+html {
+  scroll-behavior: smooth;
+}
